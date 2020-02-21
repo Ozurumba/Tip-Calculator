@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <p id="header">Tip Calculator</p>
+            <div id="input-wrapper">
+                <div class="row-div">
+                    <label for="">Bill Amount</label>
+                    <input type="number" id="bill" value="">
+                </div>
+                <div class="row-div">
+                    <label for="">Tip</label>
+                    <select name="" id="service">
+                        <option value=""></option>
+                        <option value="30">Outstanding Service (30 %)</option>
+                        <option value="20">Good Service (20 %)</option>
+                        <option value="10">Just Okay (10 %)</option>
+                        <option value="5">Bad Service (5 %)</option>
+                        <option value="0">No Tip (0 %)</option>
+                    </select>
+                </div>
+                <div class="row-div">
+                    <label for="">No of People</label>
+                    <input type="number" id="numOfClients">
+                </div>
+            </div>
+            <div id="btn-wrapper">
+                <div >
+                    <button id="calculate">Calculate Bill</button>
+                </div>
+                <div>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            <div id="feedback">
+                <div class="displayResult">
+                    <div class="box blueColor">
+                        <p class="title">Total Bill (Tip Inclusive)</p>
+                        <p id="totalBill" class="result">0.00</p>
+                    </div>
+                    <div class="box blueColor">
+                        <p class="title">Tip Amount</p>
+                        <p id="tip" class="result">0.00</p>
+                    </div>      
+                </div>
+                <div class="displayResult">
+                    <div class="box blueColor">
+                        <p class="title">Tip Per Individual</p>
+                        <p id="tipPerPerson" class="result">0.00</p>
+                    </div>
+                    <div class="box redColor">
+                        <p class="title" >Individual Bill</p>
+                        <p id="billPerPerson" class="result">0.00</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Powered by Obinna</p>   
+        </footer>
+    </div>  
+    <script src="main.js"></script>
+</body>
+</html>
